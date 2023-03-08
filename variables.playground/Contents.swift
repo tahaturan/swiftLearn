@@ -11,3 +11,13 @@ var numberTwo = 15
 
 var sum = numberOne + numberTwo
 print(sum)
+
+
+// **************************
+
+var userName = "Taha"
+
+// Sabit Tanimlama
+
+let userSurname = "Turan"
+
