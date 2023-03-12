@@ -21,3 +21,8 @@ var userName = "Taha"
 
 let userSurname = "Turan"
 
+userName.append("a")
+userName.lowercased()
+userName.uppercased()
+userName.count
+userName.isEmpty
