@@ -38,3 +38,15 @@ let myNumberD = 4.0
 userAgeD / myNumberD
 
 var myboolean = false
+
+//Part 2
+
+
+var myString : String = "50"
+
+var number5 : Int = Int(45.0)
+
+let stringNumber = String(20)
+
+var newInt = Int(myString )
+(newInt ?? 40) * 5
