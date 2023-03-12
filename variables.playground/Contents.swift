@@ -26,3 +26,15 @@ userName.lowercased()
 userName.uppercased()
 userName.count
 userName.isEmpty
+
+let userAge = 50
+let myNumber2 = 4
+userAge / myNumber2
+
+
+let userAgeD = 50.0
+let myNumberD = 4.0
+
+userAgeD / myNumberD
+
+var myboolean = false
