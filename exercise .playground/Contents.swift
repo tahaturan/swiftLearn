@@ -13,3 +13,12 @@ print(name)
 print("\(name) adinda \(age) yasindadir")
 
 print("Merhaba")
+
+
+// Sabitler
+
+let pi = 3.14
+
+print(pi)
+
+// sabitler hafiyazi rahatlatir ve ddegistireemezler
