@@ -51,3 +51,16 @@ var yazi1 :String = "124.53"
 if let sayi1 = Double(yazi1){
     print(sayi1)
 }
+
+//Tuples
+
+var kisi = ("taha" , "Muhammed")
+
+var ad = kisi.0
+print(ad)
+
+var kordinat = (x:10 , y:20)
+
+print(kordinat.y) 
+
+
