@@ -60,7 +60,44 @@ var ad = kisi.0
 print(ad)
 
 var kordinat = (x:10 , y:20)
+print(kordinat.y)
 
-print(kordinat.y) 
+var s1 : Int = 20
+var s2 :Int = 30
+var s3 :Int=40
+//karsilastirma operatirleri
+print(s1 == s2)
+print(s1 != s2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
