@@ -69,7 +69,16 @@ var s3 :Int=40
 print(s1 == s2)
 print(s1 != s2)
 
+// if yapisi
 
+
+if s1 > s2 {
+    print("\(s1) buyuktur \(s2) den")
+}else{
+    print("\(s2) buyuktur \(s1) den")
+}
+
+s1 == s2 ? print("esit"):print("esit degil")
 
 
 
