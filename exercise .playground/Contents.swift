@@ -80,8 +80,27 @@ if s1 > s2 {
 
 s1 == s2 ? print("esit"):print("esit degil")
 
+//Switch
 
+let girdi:Int = 4
 
+switch girdi {
+case 1:
+    print("pazartesi")
+case 2:
+    print("sali")
+case 3:
+    print("carsamba")
+case 4:
+    print("persembe")
+case 5:
+    print("cuma")
+case 6:
+    print("cumartesi")
+case 7:
+    print("pazar")
+default : print("yanlis gun degeri")
+}
 
 
 
