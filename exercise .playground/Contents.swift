@@ -102,8 +102,30 @@ case 7:
 default : print("yanlis gun degeri")
 }
 
+//For Dongusu
 
+for  i in 1...5{
+    print(i)
+}
 
+let baslagic:Int = 10
+let bitis:Int = 20
+let artis:Int=5
+
+for i in stride(from: baslagic, through: bitis, by: artis){
+    print(i)
+}
+
+//while donugusu
+
+var sayac:Int = 1
+
+while sayac < 5{
+    print(sayac)
+    
+    sayac += 1
+    
+}
 
 
 
