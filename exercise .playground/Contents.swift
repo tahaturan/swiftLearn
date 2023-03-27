@@ -127,21 +127,30 @@ while sayac < 5{
     
 }
 
+// Hazir komutlar
 
+let randomSayi = Int.random(in: 0...44)
 
+print(randomSayi)
 
+let s = sqrt(25)
 
+let p = pow(4, 3)
 
+let a = abs(-45)
 
+var mx = max(34, 46)
 
+let mn = min(34, 463)
 
+//Tarihsel
 
+let tarih = Date()
 
+let takvim = Calendar.current
 
-
-
-
-
+let yil = takvim.component(.year, from: tarih)
+let ay = takvim.component(.month, from: tarih)
 
 
 
