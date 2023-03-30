@@ -171,5 +171,12 @@ if let temp = str{
     print("srt nil degerdir")
 }
 
+var yazi: String = "48T"
+
+if let sayi = Int(yazi){
+    print(sayi)
+}else{
+    print("yazi int degerine cevrilemiyor")
+}
 
 
