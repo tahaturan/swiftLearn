@@ -155,8 +155,21 @@ let ay = takvim.component(.month, from: tarih)
 
 
 
+//Optional Giris
 
+var str : String? // nill gelebilir optional parametredir
 
+if str != nil{
+    print(str!)
+}else{
+    print("str nill deger iceriyor")
+}
+str = "taha"
+if let temp = str{
+    print(temp)
+}else{
+    print("srt nil degerdir")
+}
 
 
 
