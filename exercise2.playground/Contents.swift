@@ -116,3 +116,13 @@ if isimler.contains(isimKontrol){
 }else{
     print("\(isimKontrol) ismi Listede Mevcut Degil")
 }
+
+// Set
+
+var meyveler2 : Set<String> = ["Cilek" , "Armut", "Karpuz"]
+meyveler2.insert("Ayva") // Veri Ekleme
+
+var bosSet = Set <Int>() // Bos Set Olusturma
+
+bosSet.insert(24)
+print(bosSet)
