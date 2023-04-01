@@ -126,3 +126,56 @@ var bosSet = Set <Int>() // Bos Set Olusturma
 
 bosSet.insert(24)
 print(bosSet)
+
+print("--------------")
+
+//Dictionary
+
+var dic1 = [Int:String]() // bos bir dictioanry olusturma
+
+var iller :[Int : String] = [09:"Aydin" ,20:"Denizli" , 34:"Istanbul" , 35:"Izmir"]
+
+iller[09]
+iller[35]
+
+for (key , value) in iller{
+    print("Key: \(key),Value: \(value)")
+}
+
+//Ornek 2 farkli Diziden Dictionary Olusturma
+
+var derslerDizisi : [String] = ["Matematik", "Tarih" , "Kimya"]
+var notlarDizisi :[Int]=[40,60,70]
+
+var dersNotariDictionary = Dictionary(uniqueKeysWithValues: zip(notlarDizisi, derslerDizisi))
+print(dersNotariDictionary)
+
+
+var urunFiyatlariDic :[Double:String] = [15.99:"Kitap", 42.53:"Kalem" , 53.35:"Defter"]
+
+var urunFiyatlari=[Double](urunFiyatlariDic.keys)
+var urunIsimleri = [String](urunFiyatlariDic.values)
+print(urunFiyatlari)
+print(urunIsimleri)
+
+//Filtreleme
+
+var filtreleme1 = urunFiyatlariDic.filter({$0.key > 20})
+print(filtreleme1)
+
+//Ornek Karne Uygulamasi
+
+var derslerNotlarDic = [String:Double]()
+
+derslerNotlarDic["Tarih"] = 40
+derslerNotlarDic["Edebiyat"] = 41
+derslerNotlarDic["Matematik"] = 40
+
+var toplamDersNotlari :Double=0
+for (dersler , notlar) in derslerNotlarDic{
+    print("Ders: \(dersler) - Not: \(notlar)")
+    toplamDersNotlari += notlar
+}
+var derslerinOrtalamasi = toplamDersNotlari / Double(derslerNotlarDic.count)
+
+print(derslerinOrtalamasi)
