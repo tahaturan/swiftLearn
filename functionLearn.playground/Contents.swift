@@ -20,3 +20,21 @@ func sayilariTopla(sayi1:Int , sayi2:Int) -> Int {
 var toplam:Int = sayilariTopla(sayi1: 48, sayi2: 34)
 
 print("Sayilarin Toplami: \(toplam)")
+print("-----Metodlara Erisim--------")
+
+struct Matematik {
+    let sayi1:Int?
+    let sayi2:Int?
+    
+    func topa() -> Int {
+        return sayi1! + sayi2!
+    }
+    func cikar() -> Int {
+        return sayi1! - sayi2!
+    }
+}
+
+let islem:Matematik=Matematik(sayi1: 20, sayi2: 12)
+
+print("Toplam: \(islem.topa())")
+print("Fark: \(islem.cikar())")
