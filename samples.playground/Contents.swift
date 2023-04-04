@@ -43,3 +43,19 @@ var isim = "Taha"
 var harf = "a"
 let harfAdeti = kelimeHarfSayisi(kelime: isim, harf: harf)
 print("\(isim) isminde \(harf) harfi \(harfAdeti) adet gecmektedir")
+print("----------------")
+
+func icAcilarToplami(kenarSayisi:Int) -> Int? {
+    if kenarSayisi  <= 2 {
+        return nil
+    }else{
+        return (kenarSayisi - 2) * 180
+    }
+}
+
+let aciHesaplama = icAcilarToplami(kenarSayisi: 3)
+if let temp = aciHesaplama{
+    print("Sonuc: \(temp)")
+}else{
+    print("Hatali Kenar Sayisi")
+}
