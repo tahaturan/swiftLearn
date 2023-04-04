@@ -52,3 +52,23 @@ func variadicParametre(sayilar:Int...) -> Int {
 
 let sonuc:Int=variadicParametre(sayilar: 15 , 2,53,55)
 print(sonuc)
+
+print("Birdden fazla Donus Degeri")
+
+func islem (sayilar:[Int]) -> (toplam : Int , carpim:Int) {
+    var toplam = 0
+    var carpim = 1
+    
+    for s in sayilar{
+        toplam += s
+        carpim *= s
+    }
+    return (toplam , carpim)
+}
+
+var dizi :[Int] = [1,2,3,4,5,6]
+
+let b = islem(sayilar: dizi)
+
+print(b.carpim)
+print(b.toplam)
