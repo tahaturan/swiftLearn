@@ -15,3 +15,15 @@ var diktorgenCevre = dikdortgenCevre(kisaKenar: 10, uzunKenar: 22)
 print(diktorgenCevre)
 print("----------------------")
 
+func faktoriyel(sayi:Int) -> Int {
+    var factoiyel = 1
+    
+    for s in 1...sayi{
+        factoiyel *= s
+    }
+    return factoiyel
+}
+
+let factoriyel = faktoriyel(sayi: 4)
+print("Sayinin faktoriyeli: \(factoriyel)")
+
