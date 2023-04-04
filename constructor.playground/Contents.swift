@@ -41,3 +41,21 @@ kopek2.renk = "Beyaz"
 
 print(kopek1.renk ?? "null")
 print(kopek2.renk ?? "Null")
+
+print("-------Statik Degiskener-------")
+
+//nesne olusturmadan sinif icindeki verielr erisme
+
+class Hesaplama{
+    static var sayi:Int = 20
+    static let sabitDeger:String = "Taha"
+}
+print(Hesaplama.sayi)
+print(Hesaplama.sabitDeger)
+
+struct Matematik {
+    static let piSayisi:Double = 3.14
+    static var sabitSayi:Int = 20
+}
+print(Matematik.piSayisi)
+print(Matematik.sabitSayi)
