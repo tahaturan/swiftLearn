@@ -81,3 +81,18 @@ func maasHesabi(gunSayisi:Int) -> Int {
 
 let maas = maasHesabi(gunSayisi: 1)
 print("Maas: \(maas)")
+print("---------------")
+
+func kotaHesap(kotaMiktari:Int) -> Int {
+    var toplamTutar = 0
+    if kotaMiktari <= 50{
+        toplamTutar = 100
+    }else{
+        var kotaAsimMitari = kotaMiktari - 50
+        toplamTutar = 100 + (kotaAsimMitari * 4)
+    }
+    return toplamTutar
+}
+
+let kotaHesabi = kotaHesap(kotaMiktari: 52)
+print("Internet Faturasi: \(kotaHesabi)")
