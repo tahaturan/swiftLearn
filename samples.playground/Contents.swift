@@ -59,3 +59,25 @@ if let temp = aciHesaplama{
 }else{
     print("Hatali Kenar Sayisi")
 }
+
+print("-------------------")
+//1 gunde 8 saat calisabilir
+// calisma saati 10tl
+// mesai ucreti 20tl
+// 160 saat ustu mesai sayilir
+func maasHesabi(gunSayisi:Int) -> Int {
+    var toplamCalismaSaati = 8 * gunSayisi
+    let calismaUcreti = 10
+    let mesaiUcreti = 20
+    var maas = 0
+    if toplamCalismaSaati <= 160{
+        maas = toplamCalismaSaati * calismaUcreti
+    }else{
+        var ekMesaiSaati = toplamCalismaSaati - 160
+        maas = (calismaUcreti * 160) + (ekMesaiSaati * 20)
+    }
+    return maas
+}
+
+let maas = maasHesabi(gunSayisi: 1)
+print("Maas: \(maas)")
