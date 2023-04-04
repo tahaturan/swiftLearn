@@ -26,4 +26,20 @@ func faktoriyel(sayi:Int) -> Int {
 
 let factoriyel = faktoriyel(sayi: 4)
 print("Sayinin faktoriyeli: \(factoriyel)")
+print("------------------")
 
+func kelimeHarfSayisi(kelime:String , harf:String) -> Int {
+    var harfAdet = 0
+    
+    for k in kelime{
+        if String(k) == harf{
+            harfAdet += 1
+        }
+    }
+    return harfAdet
+}
+
+var isim = "Taha"
+var harf = "a"
+let harfAdeti = kelimeHarfSayisi(kelime: isim, harf: harf)
+print("\(isim) isminde \(harf) harfi \(harfAdeti) adet gecmektedir")
