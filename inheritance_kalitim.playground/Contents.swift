@@ -21,7 +21,7 @@ class Araba:Arac{
 }
 
 class Nissan : Araba{
-    let model:String
+    let model:String?
     
     init(model:String , kasaTipi:String , renk:String , vites:String) {
         self.model = model
@@ -33,3 +33,43 @@ class Nissan : Araba{
 let nissan:Nissan = Nissan(model: "moddel1", kasaTipi: "sedan", renk: "Siyah", vites: "otomatik")
 
 print(nissan.renk ?? "")
+
+// Ornek
+
+class Ev{
+    let pencereSayisi:Int?
+    
+    init(pencereSayisi:Int) {
+        self.pencereSayisi = pencereSayisi
+    }
+}
+
+class Saray: Ev {
+    let kuleSayisi:Int?
+    
+    
+    init(kuleSayisi:Int , pencereSayisi:Int) {
+        self.kuleSayisi = kuleSayisi
+        
+        
+        super.init(pencereSayisi: pencereSayisi)
+    }
+}
+
+class Villa:Ev{
+    let garajVarMi:Bool?
+    
+    
+    init(garajVarMi:Bool , pencereSayisi:Int) {
+        self.garajVarMi = garajVarMi
+        
+        super.init(pencereSayisi: pencereSayisi)
+    }
+}
+
+let topkapiSarayi:Saray=Saray(kuleSayisi: 5, pencereSayisi: 30)
+
+let villa:Villa=Villa(garajVarMi: true, pencereSayisi: 5)
+
+print(topkapiSarayi.kuleSayisi ?? 0)
+print(villa.garajVarMi ?? false)
